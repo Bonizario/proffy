@@ -1,14 +1,14 @@
 import React from 'react';
-import Landing from './pages/Landing';
 import GlobalStyle from './styles/global';
+import Routes from './routes';
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
       <GlobalStyle />
-      <Landing />
+      <Routes />
     </>
   );
-}
+};
 
 export default App;

@@ -14,26 +14,26 @@ export const Page = styled.div`
 // 68.75em = 68.75 * 16px (DO NOT USE rem IN MEDIA QUERIES)
 // https://medium.com/@barrypeng6/why-should-not-use-rem-unit-in-media-query-5645d0163ce5
 export const Container = styled.div`
-  width: 90vw;
-  max-width: 700px;
-
   > img {
     width: 100%;
   }
 
+  /* 700px */
   @media (min-width: 68.75em) {
     > img {
       grid-area: hero;
       justify-self: end;
     }
 
-    max-width: 110rem;
-    display: grid;
-    grid-template-rows: 35rem 1fr;
-    grid-template-columns: 9fr 5fr 6fr;
-    grid-template-areas:
-      'logo hero hero'
-      'buttons buttons total';
+    &.container {
+      max-width: 110rem;
+      display: grid;
+      grid-template-rows: 35rem 1fr;
+      grid-template-columns: 9fr 5fr 6fr;
+      grid-template-areas:
+        'logo hero hero'
+        'buttons buttons total';
+    }
   }
 `;
 

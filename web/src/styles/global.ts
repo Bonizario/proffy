@@ -33,7 +33,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html, body {
+    width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
   }
 
   #root {
@@ -43,7 +45,7 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100%;
   }
 
-  a {
+  a, button {
     text-decoration: none;
   }
 
@@ -57,6 +59,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body, input, button, textarea {
+    color: var(--color-text-base);
     font: 400 1.6rem Poppins, sans-serif;
   }
 
@@ -64,7 +67,13 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
   }
 
-  @media (min-width: 700px) {
+  .container {
+    width: 90vw;
+    max-width: 700px;
+  }
+
+  /* 700px */
+  @media (min-width: 43.75em) {
     :root {
       font-size: 62.5%;
     }
