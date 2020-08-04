@@ -38,9 +38,8 @@
 
 Proffy is an online learning platform designed to connect students and teachers from around the globe.
 
-This application was developed during the second **Next Level Week** held by [Rocketseat](https://rocketseat.com.br/). Accelerate people's careers through modern and powerful technologies is the main objective of Rocketseat.
-
-The event took place on the week of the National Day of Education Professionals in Brazil, serving as inspiration for the project.
+This application was developed during the second **Next Level Week** held by [Rocketseat](https://rocketseat.com.br/).
+Accelerating people's careers through modern and powerful technologies is the main objective of the event.
 
 <br />
 
