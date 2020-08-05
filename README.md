@@ -63,25 +63,32 @@ On the web page, teachers can register and provide all necessary information and
 
 ## Front end & Mobile
 
-- [React](https://reactjs.org/) & [React Native](https://reactnative.dev/)
+- [React](https://reactjs.org/)
+- [React Native](https://reactnative.dev/)
 - [Typescript](https://www.typescriptlang.org/)
-- [Styled Components](https://styled-components.com/)
-- [Expo](https://expo.io/)
 - [Axios](https://github.com/axios/axios)
+- [Expo](https://expo.io/)
+- [Styled Components](https://styled-components.com/)
 - [VS Code][vc] with [EditorConfig][vceditconfig], [ESLint][vceslint] and [Prettier][vcprettier]
 
 ## Back end
 
-🚧 Under construction @_@
+- [Express](https://github.com/expressjs/express)
+- [TS Node](https://github.com/TypeStrong/ts-node)
+- [Typescript](https://www.typescriptlang.org/)
+- [SQLite3](https://www.npmjs.com/package/sqlite3)
+- [Knex](http://knexjs.org/)
+- [Cors](https://www.npmjs.com/package/cors)
+- [VS Code][vc] with [EditorConfig][vceditconfig], [ESLint][vceslint] and [Prettier][vcprettier]
 
 <br />
 
 # 💬 How to contribute
 
-If you want to contribute to this repository, either by fixing bugs, adding comments or new features, you can follow this tutorial below:
+If you want to contribute to this project, either by fixing bugs, adding comments or new features, you can follow this tutorial below:
 
 - **[Fork](https://help.github.com/pt/github/getting-started-with-github/fork-a-repo)** this repository
-- **[Clone](https://help.github.com/pt/github/creating-cloning-and-archiving-repositories/cloning-a-repository)** on your machine
+- **[Clone](https://help.github.com/pt/github/creating-cloning-and-archiving-repositories/cloning-a-repository)** it on your machine
 - Create a **branch** with your feature: `git checkout -b my-branch`
 - **Stage** your changes: `git add .`
 - Make a **commit** telling what you did: `git commit -m "feat: my new feature"`
