@@ -14,7 +14,7 @@
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": 11,
+    "ecmaVersion": 2017,
     "sourceType": "module"
   },
   "settings": {
@@ -61,6 +61,9 @@
         ]
       }
     ],
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "no-unused-vars": "off",
+    "class-methods-use-this": "off",
+    "camelcase": "off"
   }
 }
