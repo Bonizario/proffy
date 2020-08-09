@@ -11,6 +11,14 @@ export const Container = styled.div`
 
 export const SearchTeachersForm = styled.form`
   margin-top: 3.2rem;
+  input:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-clear-button {
+    opacity: 0;
+    appearance: none;
+  }
+  input[type='time' i]::-webkit-inner-spin-button {
+    opacity: 0;
+    appearance: none;
+  }
 
   label {
     color: var(--color-text-in-primary);
@@ -18,57 +26,19 @@ export const SearchTeachersForm = styled.form`
 
   @media (min-width: 43.75em) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 1.6rem;
     position: absolute;
-    bottom: -4.4rem;
-  }
-`;
-
-export const InputBlock = styled.div`
-  position: relative;
-
-  > label {
-    font-size: 1.4rem;
-  }
-
-  > label > input {
-    width: 100%;
-    height: 5.6rem;
-    padding: 0 1.6rem;
-    margin-top: 0.8rem;
-    font: 1.6rem Archivo;
-    border-radius: 0.8rem;
-    border: 1px solid var(--color-line-in-white);
-    background-color: var(--color-input-background);
-  }
-
-  &:focus-within::after {
-    width: calc(100% - 3.2rem);
-    height: 2px;
-    content: '';
-    bottom: 0;
-    left: 1.6rem;
-    right: 1.6rem;
-    position: absolute;
-    background-color: var(--color-primary-light);
-  }
-
-  & + & {
-    margin-top: 2rem;
-  }
-
-  @media (min-width: 43.75em) {
-    & + & {
-      margin-top: 0;
-    }
+    bottom: -2.8rem;
   }
 `;
 
 export const Main = styled.main`
   width: 90%;
-  margin: 3.2rem auto 4.8rem;
-
+  margin: 5.6rem auto;
+  > article:first-of-type {
+    margin-top: 44rem;
+  }
   @media (min-width: 43.75em) {
     max-width: 74rem;
   }

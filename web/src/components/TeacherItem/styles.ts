@@ -60,7 +60,7 @@ const Item = styled.article`
       color: var(--color-primary);
     }
 
-    > button {
+    > a {
       width: 70%;
       height: 5.6rem;
       max-width: 20rem;
@@ -95,13 +95,13 @@ const Item = styled.article`
       margin-left: 1.6rem;
     }
 
-    > footer > button {
+    > footer > a {
       width: 24.5rem;
       font-size: 1.6rem;
       justify-content: center;
     }
 
-    > footer > button > img {
+    > footer > a > img {
       margin-right: 1.6rem;
     }
   }

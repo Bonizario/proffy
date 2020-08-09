@@ -4,10 +4,7 @@ export const Header = styled.div`
   display: flex;
   flex-direction: column;
   background-color: var(--color-primary);
-
-  @media (min-width: 43.75em) {
-    height: 34rem;
-  }
+  height: 34rem;
 `;
 
 export const TopBarContainer = styled.div`
@@ -37,25 +34,42 @@ export const TopBarContainer = styled.div`
   }
 `;
 
-export const HeaderContent = styled.div`
+interface HeaderContentProps {
+  teacherForm?: boolean;
+}
+
+export const HeaderContent = styled.div<HeaderContentProps>`
   width: 90%;
   position: relative;
   margin: 3.2rem auto;
+  padding-top: ${props => (props.teacherForm ? '0' : '4.8rem')};
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 
   > strong {
     font: 700 3.6rem/4.2rem Archivo, sans-serif;
     color: var(--color-title-in-primary);
   }
 
+  > p {
+    max-width: 30rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: var(--color-text-in-primary);
+    margin-top: 2.4rem;
+  }
+
   @media (min-width: 43.75em) {
     flex: 1;
     max-width: 74rem;
+    padding-top: ${props => (props.teacherForm ? '2.4rem' : '4.8rem')};
     margin: 0 auto;
-    padding-bottom: 4.8rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
 
     > strong {
       max-width: 35rem;

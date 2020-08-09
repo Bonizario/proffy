@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
     --color-text-base: #6A6180;
     --color-line-in-white: #E6E6F0;
     --color-input-background: #F8F8FC;
+    --color-input-placeholder: #C1BCCC;
     --color-button-text: #FFFFFF;
     --color-box-base: #FFFFFF;
     --color-box-footer: #FAFAFC;
@@ -43,6 +44,7 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     justify-content: center;
     min-height: 100%;
+    background-color: var(--color-background);
   }
 
   a, button {

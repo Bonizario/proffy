@@ -5,10 +5,17 @@ import backIcon from '../../assets/images/icons/back.svg';
 import { Header, TopBarContainer, HeaderContent } from './styles';
 
 interface PageHeaderProps {
-  title: String;
+  title: string;
+  description?: string;
+  teacherForm?: boolean;
 }
 
-const PageHeader: React.FC<PageHeaderProps> = ({ title, children }) => {
+const PageHeader: React.FC<PageHeaderProps> = ({
+  title,
+  description,
+  children,
+  teacherForm,
+}) => {
   return (
     <Header>
       <TopBarContainer>
@@ -17,8 +24,9 @@ const PageHeader: React.FC<PageHeaderProps> = ({ title, children }) => {
         </Link>
         <img src={logoImg} alt="Proffy" />
       </TopBarContainer>
-      <HeaderContent>
+      <HeaderContent teacherForm={teacherForm}>
         <strong>{title}</strong>
+        {description && <p>{description}</p>}
         {children}
       </HeaderContent>
     </Header>

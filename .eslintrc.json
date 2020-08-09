@@ -62,8 +62,11 @@
       }
     ],
     "react/prop-types": "off",
-    "no-unused-vars": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-curly-newline": "off",
     "class-methods-use-this": "off",
+    "no-unused-vars": "off",
     "camelcase": "off"
   }
 }
